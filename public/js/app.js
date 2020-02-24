@@ -9,7 +9,7 @@
    weatherForm.addEventListener('click',(e)=>
    {
        e.preventDefault()
-       error.textContent='Loading ...'
+       error.textContent='Loading ....'
        let location = searchValue.value
 
        fetch('http://localhost:3000/weather?address='+location).then((response)=>
