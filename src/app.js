@@ -23,7 +23,7 @@ app.use(express.static(publicDirectoryPath))
 const testObj=
 {
     title: 'Weather',
-    name: 'Andrew Mead'
+    name: 'Faizan Ali'
 
 }
 
