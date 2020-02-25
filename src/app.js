@@ -70,7 +70,7 @@ app.get('/weather', (req, res) => {
             return res.send({error})
         }
         
-        res.send({data})
+        res.send({data,place_name})
 
      })
          

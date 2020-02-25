@@ -15,8 +15,14 @@ const foreCast =(lat,long,callback)=>
        }
        else
        {
-         const data= `${response.body.daily.data[0].summary}
-                     There is ${response.body.daily.data[0].precipProbability} chance of rain`  
+         const data={
+             summary:response.body.daily.data[0].summary,
+             rainChance:response.body.daily.data[0].precipProbability,
+             visibility:response.body.currently.visibility,
+             temperature:response.body.currently.temperature,
+             windSpeed:response.body.currently.windSpeed
+         }
+           
          callback(undefined,data)
        }
     })
