@@ -24,7 +24,7 @@ app.use(express.static(publicDirectoryPath))
 const testObj=
 {
     title: 'Weather',
-    name: 'Faizan'
+    name: 'Faizan Ali Gujjar @Next Level Developer'
 
 }
 
@@ -36,7 +36,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Andrew Mead'
+        name: 'Faizan Ali Gujjar @Next Level Developer '
     })
 })
 
@@ -44,7 +44,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         helpText: 'This is some helpful text.',
         title:'Help',
-        name:'Andrew Mead'
+        name:'Faizan Ali Gujjar @Next Level Developer '
     })
 })
 
@@ -83,7 +83,7 @@ app.get('/help/*', (req, res)=>{
     {
       title:'404', 
       errorMessage:'Article Not Found',
-      name:'Andrew Mead'
+      name:'Faizan Ali Gujjar @Next Level Developer '
     })
 });
 
@@ -93,7 +93,7 @@ app.get('*', (req, res)=>{
     {
       title:'404',
       errorMessage:'Page not found',
-      name:'Andrew Mead'
+      name:'Faizan Ali Gujjar @Next Level Developer '
   
     })
 });

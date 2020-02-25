@@ -2,7 +2,7 @@ const request = require ('request')
 
 const foreCast =(lat,long,callback)=>
 {
-    const url="https://api.darksky.net/forecast/5de0b09c79c5d19f18484fdfb5c58c56/"+lat+","+long
+    const url="https://api.darksky.net/forecast/5de0b09c79c5d19f18484fdfb5c58c56/"+lat+","+long+'?limit=1'
     request({url,json:true},(error,response)=>
     {
        if(error)
