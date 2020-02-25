@@ -6,6 +6,7 @@ const foreCast =require('../src/foreCast')
 
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //set path of views and static assests
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -23,7 +24,7 @@ app.use(express.static(publicDirectoryPath))
 const testObj=
 {
     title: 'Weather',
-    name: 'Faizan Ali'
+    name: 'Faizan'
 
 }
 
@@ -97,6 +98,6 @@ app.get('*', (req, res)=>{
     })
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server is up on port 3000.')
 })
